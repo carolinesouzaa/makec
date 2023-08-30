@@ -1,36 +1,35 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from "react-native";
 
-/*import topo from "../../../assets/topo.png";
-import logo from "../../../assets/logo.png";*/
+import topo from "../../../assets/topo.png";
+import logo from "../../../assets/logo.png";
 
-const widht = Dimensions.get("screen").width;
-
-export default function Carrinho() {
+export default function Sacola() {
   return (
     <>
       <Image source={topo} style={estilos.topo} />
-      <Text style={estilos.titulo}>Detalhe do Carrinho</Text>
-      <View style={estilos.carrinho}>
-        <Text style={estilos.titulocarrinho}>Carrinho de Compras</Text>
-        <View style={estilos.fazenda}>
-          <Image style={estilos.imagemFazenda} source={logo}/>
-          <Text style={estilos.nomeFazenda}>Fazenda ETEC Cidade do Livro</Text>
+      <View style={estilos.sacola}>
+        <Text style={estilos.titulosacola}>Sacola de Produtos</Text>
+        <View style={estilos.produtos}>
+          <Image style={estilos.imagemProdutos} source={logo}/>
+          <Text style={estilos.nomeProdutos}>Loja Make.C Cosméticos</Text>
         </View>
         <Text style={estilos.descricao}>
-          Uma cesta de produtos selecionados cuidadosamente
-          da fazenda direto para a sua cozinha
+          Um kit recheado das mais diversas makes que você pode imaginar.
+          Sua jornada de beleza começa aqui!
         </Text>
-        <Text style={estilos.preco}>R$40,00</Text>
+        <Text style={estilos.preco}>R$250,00</Text>
       </View>
     </>
   );
 }
 
+const width = Dimensions.get("screen").width;
+
 const estilos = StyleSheet.create({
   topo: {
     width: "100%",
-    height: (578 / 768) * widht,
+    height: (578 / 768) * width
   },
   titulo: {
     fontSize: 24,
@@ -42,27 +41,27 @@ const estilos = StyleSheet.create({
     position: "absolute",
     padding: 16,
   },
-  titulocarrinho: {
+  titulosacola: {
     fontSize: 26,
     lineHeight: 42,
     color: "#464646",
     fontFamily: 'MontserratBold'
   },
-  carrinho: {
+  sacola: {
     paddingVertical: 8,
     paddingHorizontal: 16,
   },
-  nomeFazenda: {
+  nomeProdutos: {
     fontSize: 16,
     lineHeight: 26,
     marginLeft: 12,
     fontWeight: "bold"
   },
-  imagemFazenda: {
-    width: 32,
-    height: 32,
+  imagemProdutos: {
+    width: 75,
+    height: 75,
   },
-  fazenda: {
+  produtos: {
      flexDirection: "row",
      paddingVertical: 12
   },
