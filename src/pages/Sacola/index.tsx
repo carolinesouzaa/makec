@@ -19,9 +19,18 @@ import iluminador3 from "../../../assets/iluminador/dior.png";
 import iluminador2 from "../../../assets/iluminador/fentybeauty.png";
 import iluminador4 from "../../../assets/iluminador/marimariailuminador.png";
 
+import rimel1 from "../../../assets/rimel/bellafemme.png";
+import rimel2 from "../../../assets/rimel/francineehlke.png";
+import rimel3 from "../../../assets/rimel/marimaria.png";
+import rimel4 from "../../../assets/rimel/marisaad.png";
+import rimel5 from "../../../assets/rimel/marykay.png";
+import rimel6 from "../../../assets/rimel/maybelline.png";
+import rimel7 from "../../../assets/rimel/rubyrose.png";
+
 export default function Sacola() {
   return (
     <>
+    <View style={estilos.fundo}>
       <Image source={topo} style={estilos.topo} />
       <View style={estilos.sacola}>
         <Text style={estilos.titulosacola}>Sacola de Produtos</Text>
@@ -59,7 +68,7 @@ export default function Sacola() {
               <Text style={estilos.descricao}>
                 Blush
               </Text>
-              <Text style={estilos.preco}>R$45,90,00</Text>
+              <Text style={estilos.preco}>R$45,90</Text>
             </View>
           </View>
 
@@ -164,8 +173,85 @@ export default function Sacola() {
             </View>
           </View>
 
+          {/*MÁSCARA DE CÍLIOS*/}
+        <View style={estilos.item}>
+            <Image style={estilos.imagemProdutos} source={rimel1} />
+            <View style={estilos.divInfo}>
+              <Text style={estilos.nomeProdutos}>Bella Femme</Text>
+              <Text style={estilos.descricao}>
+                Máscara de Cílios 2 em 1
+              </Text>
+              <Text style={estilos.preco}>R$15,00</Text>
+            </View>
+          </View>
+
+          <View style={estilos.item}>
+            <Image style={estilos.imagemProdutos} source={rimel2} />
+            <View style={estilos.divInfo}>
+              <Text style={estilos.nomeProdutos}>Francine Ehlke</Text>
+              <Text style={estilos.descricao}>
+                Máscara de Cílios Volume Max
+              </Text>
+              <Text style={estilos.preco}>R$55,00</Text>
+            </View>
+          </View>
+
+          <View style={estilos.item}>
+            <Image style={estilos.imagemProdutos} source={rimel3} />
+            <View style={estilos.divInfo}>
+              <Text style={estilos.nomeProdutos}>Mari Maria</Text>
+              <Text style={estilos.descricao}>
+                Máscara de Cílios Princess
+              </Text>
+              <Text style={estilos.preco}>R$55,00</Text>
+            </View>
+          </View>
+
+          <View style={estilos.item}>
+            <Image style={estilos.imagemProdutos} source={rimel4} />
+            <View style={estilos.divInfo}>
+              <Text style={estilos.nomeProdutos}>Mari Saad</Text>
+              <Text style={estilos.descricao}>
+                Máscara de Cílios by Oceane
+              </Text>
+              <Text style={estilos.preco}>R$65,00</Text>
+            </View>
+          </View>
+
+
+          <View style={estilos.item}>
+            <Image style={estilos.imagemProdutos} source={rimel5} />
+            <View style={estilos.divInfo}>
+              <Text style={estilos.nomeProdutos}>Mary Kay</Text>
+              <Text style={estilos.descricao}>
+                Máscara de Cílios Lash Intensity
+              </Text>
+              <Text style={estilos.preco}>R$60,00</Text>
+            </View>
+          </View>
+
+          <View style={estilos.item}></View>
+            <Image style={estilos.imagemProdutos} source={rimel6} />
+            <View style={estilos.divInfo}>
+              <Text style={estilos.nomeProdutos}>Maybelline</Text>
+              <Text style={estilos.descricao}>
+                Máscara de Cílios Volum Express
+              </Text>
+              <Text style={estilos.preco}>R$30,00</Text>
+            </View>
+          </View>
+
+          <View style={estilos.item}></View>
+            <Image style={estilos.imagemProdutos} source={rimel7} />
+            <View style={estilos.divInfo}>
+              <Text style={estilos.nomeProdutos}>Ruby Rose</Text>
+              <Text style={estilos.descricao}>
+                Máscara de Cílios Feels Mood
+              </Text>
+              <Text style={estilos.preco}>R$25,00</Text>
+            </View>
+          </View>
         </View>
-      </View>
     </>
   );
 }
@@ -244,5 +330,8 @@ const estilos = StyleSheet.create({
     width: "100%",
     display: 'flex',
     gap: 2,
+  },
+  fundo: {
+    backgroundColor: "#ffffe0"
   }
 });
