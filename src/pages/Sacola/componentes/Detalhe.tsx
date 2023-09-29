@@ -29,7 +29,7 @@ export default function Detalhe() {
     <>
       <View style={estilos.fundo}>
         <View style={estilos.sacola}>
-          <Text style={estilos.titulosacola}>Sacola de Produtos</Text>
+          <Text style={estilos.tituloSacola}>Sacola de Produtos</Text>
 
           {/*Lista*/}
           <View style={estilos.lista}>
@@ -229,7 +229,7 @@ export default function Detalhe() {
 const width = Dimensions.get("screen").width;
 
 const estilos = StyleSheet.create({
-  titulosacola: {
+  tituloSacola: {
     fontSize: 26,
     lineHeight: 42,
     color: "#464646",
