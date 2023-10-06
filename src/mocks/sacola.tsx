@@ -36,20 +36,80 @@ const sacola = {
         titulo: "Itens da Sacola",
         lista: [
             {
-                nome: "Blush Bruna Tavares",
+                nome: "blush1",
                 imagem: blush1,
             },
             {
-                nome: "Blush Mac",
+                nome: "blush2",
                 imagem: blush2,
             },
             {
-                nome: "Blush Melu",
+                nome: "blush3",
                 imagem: blush3,
             },
             {
-                nome: "Blush Sheglam",
+                nome: "blush4",
                 imagem: blush4,
+            },
+            {
+                nome: "gloss1",
+                imagem: gloss1,
+            },
+            {
+                nome: "gloss2",
+                imagem: gloss2,
+            },
+            {
+                nome: "gloss3",
+                imagem: gloss3,
+            },
+            {
+                nome: "gloss4",
+                imagem: gloss4,
+            },
+            {
+                nome: "iluminador1",
+                imagem: iluminador1,
+            },
+            {
+                nome: "iluminador2",
+                imagem: iluminador2,
+            },
+            {
+                nome: "iluminador3",
+                imagem: iluminador3,
+            },
+            {
+                nome: "iluminador4",
+                imagem: iluminador4,
+            },
+            {
+                nome: "rimel1",
+                imagem: rimel1,
+            },
+            {
+                nome: "rimel2",
+                imagem: rimel2,
+            },
+            {
+                nome: "rimel3",
+                imagem: rimel3,
+            },
+            {
+                nome: "rimel4",
+                imagem: rimel4,
+            },
+            {
+                nome: "rimel5",
+                imagem: rimel5,
+            },
+            {
+                nome: "rimel6",
+                imagem: rimel6,
+            },
+            {
+                nome: "rimel7",
+                imagem: rimel7,
             }
         ]
     }
